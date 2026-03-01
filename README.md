@@ -27,7 +27,7 @@ For the latest versions of Gnome using Gtk4(libadwaita) some extra steps should 
 Icon Theme:
 https://github.com/dracula/gtk/files/5214870/Dracula.zip
 extract the .zip file to the icons directory i.e. /usr/share/icons/ or ~/.icons/ (create it if necessary).
-gsettings set org.gnome.desktop.interface icon-theme "Dracula" 
+``` gsettings set org.gnome.desktop.interface icon-theme "Dracula" ``` 
 NOTE: CHANGE USERNAME IN CONFIG FILE OF SWAY
 <img width="1280" height="768" alt="20260301_01h42m06s_grim" src="https://github.com/user-attachments/assets/744c0604-5dcf-431d-b921-f9badeb9b955" />
 
