@@ -16,7 +16,10 @@ Rofi:```git clone https://github.com/dracula/rofi && cp rofi/theme/config1.rasi 
 
 GTK: https://github.com/dracula/gtk/archive/master.zip
 Extract the .zip file to the themes directory i.e. /usr/share/themes/ or ~/.themes/ (create it if necessary)
-``` gsettings set org.gnome.desktop.interface gtk-theme "Dracula" gsettings set org.gnome.desktop.wm.preferences theme "Dracula" ``` 
+```
+gsettings set org.gnome.desktop.interface gtk-theme "Dracula" 
+gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
+ ``` 
 
 For the latest versions of Gnome using Gtk4(libadwaita) some extra steps should be done in order to get it working properly, you could do it in two ways:
  Manual way
