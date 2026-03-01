@@ -6,6 +6,7 @@ sudo xbps-install -Syu void-repo-multilib void-repo-multilib-nonfree
 sudo xbps-install -Syu swayfx rofi alacritty grim xdg-desktop-portal xdg-desktop-portal-wlr swaykbdd waybar
 ```
 FONT: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip 
+
 extract to ~/.local/share/fonts   ^^^
 
 Wallpaper: https://github.com/franckey02/SwayFX-VOID-dot/blob/e69094c0c85d8a149426d146411c70440b5fdeb6/1385178.png 
