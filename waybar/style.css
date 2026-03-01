@@ -1,0 +1,253 @@
+/*
+* Dracula Theme palette
+*/
+@define-color background #282a36;
+@define-color currentLine #44475a;
+@define-color foreground #f8f8f2;
+@define-color comment #6272a4;
+@define-color cyan #8be9fd;
+@define-color green #50fa7b;
+@define-color orange #ffb86c;
+@define-color pink #ff79c6;
+@define-color purple #bd93f9;
+@define-color red #ff5555;
+@define-color yellow #f1fa8c;
+
+/* =============================== */
+/* Universal Styling */
+* {
+  border: none;
+  border-radius: 0;
+  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  font-size: 13px;
+  min-height: 0;
+}
+
+/* =============================== */
+/* Bar Styling */
+#waybar {
+  background: transparent;
+  color: @foreground;
+}
+
+/* =============================== */
+/* Main Modules */
+#custom-launcher,
+#workspaces,
+#window,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#mpd,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#custom-music,
+#custom-updates,
+#custom-nordvpn,
+#custom-notifications,
+#custom-power,
+#custom-custom,
+#custom-cycle_wall,
+#custom-clipboard,
+#custom-ss,
+#custom-weather {
+  background-color: @background;
+  color: @foreground;
+  border-radius: 10px;
+  padding: 2px 1rem;
+  box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+/* Launcher Module */
+#custom-launcher {
+  color: @purple;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+}
+
+/* Workspaces */
+#workspaces {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#workspaces * {
+  font-size: 0px;
+}
+
+#workspaces button {
+  background-color: @currentLine;
+  color: @purple;
+  border-radius: 100%;
+  min-height: 10px;
+  min-width: 10px;
+  margin: 3px 5px;
+  padding: 0px;
+  transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.68);
+  box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
+}
+
+/* System Monitoring Modules */
+#cpu,
+#memory,
+#temperature {
+  color: @purple;
+}
+
+#cpu {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#memory {
+  border-radius: 0px;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#temperature {
+  border-radius: 0px;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#disk {
+  color: @pink;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 5px;
+  padding-right: 1rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Updates Module */
+#custom-updates {
+  color: @pink;
+}
+
+/* Clock Module */
+#clock {
+  color: @pink;
+}
+
+/* Music/PlayerCTL Module */
+#custom-music.low {
+  background: linear-gradient(52deg, @purple 0%, @pink 50%, @purple 100%);
+  background-size: 300% 300%;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+  animation: gradient 15s ease infinite;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Network Module */
+#network {
+  color: @purple;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* PulseAudio Module */
+#pulseaudio {
+  color: @pink;
+  border-radius: 0;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Backlight Module */
+#backlight {
+  color: @purple;
+  border-radius: 0;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Battery Module */
+#battery {
+  color: @pink;
+  border-radius: 0;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Tray Module */
+#tray {
+  color: @purple;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-right: 1.25rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Custom Modules */
+#custom-custom {
+  color: @pink;
+  padding-right: 1.25rem;
+  margin-right: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#custom-ss {
+  color: @purple;
+  padding-right: 1.5rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#custom-cycle_wall {
+  background: linear-gradient(45deg, @pink 0%, @purple 50%, @pink 100%);
+  background-size: 500% 500%;
+  animation: gradient 7s linear infinite;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#custom-clipboard {
+  color: @purple;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#custom-power {
+  color: @purple;
+  padding-right: 1.20rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
