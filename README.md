@@ -23,9 +23,8 @@ gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 
 For the latest versions of Gnome using Gtk4(libadwaita) some extra steps should be done in order to get it working properly, you could do it in two ways:
  Manual way
- 
-    Copy the assets folder to the ~/.config directory
-    Copy the gtk-4.0/gtk.css and gtk-4.0/gtk-dark.css files to ~/.config/gtk-4.0/
+ Copy the assets folder to the ~/.config directory
+ Copy the gtk-4.0/gtk.css and gtk-4.0/gtk-dark.css files to ~/.config/gtk-4.0/
 
 Icon Theme:
 https://github.com/dracula/gtk/files/5214870/Dracula.zip
